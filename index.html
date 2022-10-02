@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GERCERY．德式選物店</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b189abc72d.js" crossorigin="anonymous"></script>
+
+    <!-- Owl Carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="main-header">
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img src="images/GERCERY.png" alt="LOGO" />
+        </a>
+        <nav class="main-nav">
+          <a href="products.html">全部商品</a>
+          <a href="brands.html">德國品牌</a>
+          <a href="about-us.html">關於我們</a>
+          <a href="faq.html">常見問題</a>
+        </nav>
+        <form class="header-search">
+          <input type="search" / placeholder="想找什麼呢？">
+          <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <div class="main-icon">
+          <ul class="action-icon">
+            <li class="icon">
+              <a href=""><i class="fa-solid fa-globe"></i></a>
+            </li>
+            <li class="icon">
+              <a href=""><i class="fa-solid fa-user"></i></a>
+            </li>
+            <li class="icon">
+              <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Cover -->
+    <section>
+      <div class="cover">
+        <div class="main-cover"></div>
+        <div class="sub-cover"></div>
+        <div class="cover-text">
+          <h1>不管是時興的、經典的<br />或是惦念的德國事物<br />在 GERCERY 都找得到</h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- News -->
+    <section class="news">
+      <div class="container">
+        <div class="news-wrap">
+          <div class="news-list">
+            <div class="news-item">
+              <span class="news-date">2022年09月16日</span>
+              <a href="" class="news-title">出貨延遲公告</a>
+            </div>
+            <div class="news-item">
+              <span class="news-date">2022年09月04日</span>
+              <a href="" class="news-title">中秋連假暫停營業及最後出貨時間公告</a>
+            </div>
+            <div class="news-item">
+              <span class="news-date">2022年08月27日</span>
+              <a href="" class="news-title">歡慶哈瑞寶一百週年優惠活動</a>
+            </div>
+          </div>
+          <div class="all-news">
+            <a href="" class="view-all-news">所有公告 ›</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Intro & Features -->
+    <section class="intro_and_features">
+      <div class="container">
+        <div class="InF-wrap">
+          <div class="intro-wrap">
+            <div class="intro-content">
+              <h2 class="intro-title">GERCERY 精選<br />德國製造<br />優質、可靠、耐用</h2>
+              <p class="intro-text">
+                1887年8月，英國通過侮辱性的商標法，規定所有從德國進口的商品必須標註「德國製造」字樣，以此與優質的英國產品做出區分，這也被視為是「德國製造」的起源。<br /><br />時至今日，「德國製造」早已脫胎換骨，隨着賓士、BMW、保時捷、愛迪達、RIMOWA等德國品牌在世界舞台上發揚光大，「德國製造」也成了享譽全球的高品質產品的代名詞。
+              </p>
+            </div>
+            <div class="intro-img">
+              <img src="images/made_in_germany_cut.jpg" alt="" />
+            </div>
+          </div>
+          <ul class="feat-wrap">
+            <li class="feat-item">
+              <figure>
+                <img src="images/cargo_cut.jpg" alt="" />
+                <figcaption>
+                  <h3 class="feat-title">德國原裝進口<br />價格經濟實惠</h3>
+                  <p class="feat-text">
+                    GERCERY 與許多德國品牌都有合作，產品直接自德國進口，替您省下代理商及找代購的費用！
+                  </p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="feat-item">
+              <figure>
+                <img src="images/cs_cut.jpg" alt="" />
+                <figcaption>
+                  <h3 class="feat-title">專人客服<br />在線為您服務</h3>
+                  <p class="feat-text">
+                    GERCERY 是由一群熱愛及熟悉德國的人組成，對於德國大小事皆十分了解，有問題我們都能替您解答！
+                  </p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="feat-item">
+              <figure>
+                <img src="images/eco_packaging_cut.jpg" alt="" />
+                <figcaption>
+                  <h3 class="feat-title">環保包裝<br />為地球盡一份心力</h3>
+                  <p class="feat-text">
+                    我們沒有華麗的外包裝，減少不必要的浪費是我們的堅持，所有合作廠商皆符合永續發展法規，遵守少用塑膠、並減少外盒包裝。
+                  </p>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+          <div class="view-about-us">
+            <a href="about-us.html" class="btn-about-us">了解更多</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="category">
+      <div class="container">
+        <h2 class="category-title">商品分類</h2>
+        <div class="category-wrap">
+          <div class="category-item">
+            <a href="products.html">
+              <div class="img">
+                <img src="images/snacks_cut.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3 class="category-name">飲食零嘴</h3>
+                <p class="category-description">軟糖、糖果、餅乾、巧克力、燕麥片、花草茶、啤酒、咖啡、氣泡飲</p>
+              </div>
+            </a>
+          </div>
+          <div class="category-item">
+            <a href="products.html">
+              <div class="img">
+                <img src="images/supplements_cut.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3 class="category-name">營養保健</h3>
+                <p class="category-description">精油、發泡錠、喉糖、膠原蛋白、益生菌、魚油、膠囊、維他命</p>
+              </div>
+            </a>
+          </div>
+          <div class="category-item">
+            <a href="products.html">
+              <div class="img">
+                <img src="images/cosmeceutical_cut.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3 class="category-name">藥妝＆保養</h3>
+                <p class="category-description">百靈油、時空膠囊、面膜、乳霜、護手霜、護唇膏、美妝、刷具</p>
+              </div>
+            </a>
+          </div>
+          <div class="category-item">
+            <a href="products.html">
+              <div class="img">
+                <img src="images/daily_necessities_cut.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3 class="category-name">日常用品</h3>
+                <p class="category-description">肥皂、洗髮精、沐浴乳、護髮素、牙膏、洗衣精（膠囊）、拭鏡紙</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="view-about-us">
+          <a href="products.html" class="btn-about-us">所有商品</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bestsellers -->
+    <section class="bestseller">
+      <div class="container">
+        <div class="bestseller-wrap">
+          <h2 class="bestseller-title">熱銷商品</h2>
+          <p class="bestseller-description">看看大家最近都買了些什麼，說不定會有你喜歡的商品喔！</p>
+          <div class="owl-carousel owl-theme bestseller-slider-wrap">
+            <div class="item bestseller-item">
+              <a href="product-page.html">
+                <div class="img">
+                  <img src="images/china_oil_cut.jpg" alt="" />
+                </div>
+                <div class="text">
+                  <h3 class="bestseller-name">德國百靈油</h3>
+                  <p class="bestseller-brand">China Oel</p>
+                  <p class="bestseller-price">NT$ 750</p>
+                </div>
+              </a>
+            </div>
+            <div class="item bestseller-item">
+              <a href="product-page.html">
+                <div class="img">
+                  <img src="images/tablet_cut.jpg" alt="" />
+                </div>
+                <div class="text">
+                  <h3 class="bestseller-name">綜合水果發泡錠</h3>
+                  <p class="bestseller-brand">Rossmann Altapharma</p>
+                  <p class="bestseller-price">NT$ 75 - 95</p>
+                </div>
+              </a>
+            </div>
+            <div class="item bestseller-item">
+              <a href="product-page.html">
+                <div class="img">
+                  <img src="images/haribo_cut.jpg" alt="" />
+                </div>
+                <div class="text">
+                  <h3 class="bestseller-name">金熊Ｑ軟糖</h3>
+                  <p class="bestseller-brand">Haribo</p>
+                  <p class="bestseller-price">NT$ 55</p>
+                </div>
+              </a>
+            </div>
+            <div class="item bestseller-item">
+              <a href="product-page.html">
+                <div class="img">
+                  <img src="images/herbacin_handcream_cut.jpg" alt="" />
+                </div>
+                <div class="text">
+                  <h3 class="bestseller-name">小甘菊經典護手霜</h3>
+                  <p class="bestseller-brand">Herbacin</p>
+                  <p class="bestseller-price">NT$ 175</p>
+                </div>
+              </a>
+            </div>
+            <div class="item bestseller-item">
+              <a href="product-page.html">
+                <div class="img">
+                  <img src="images/doppelherz_night_capsules_cut.jpg" alt="" />
+                </div>
+                <div class="text">
+                  <h3 class="bestseller-name">夜舒眠晚安軟膠囊</h3>
+                  <p class="bestseller-brand">Doppelherz</p>
+                  <p class="bestseller-price">NT$ 575</p>
+                </div>
+              </a>
+            </div>
+            <div class="item bestseller-item">
+              <a href="product-page.html">
+                <div class="img">
+                  <img src="images/balea_q10_cut.jpg" alt="" />
+                </div>
+                <div class="text">
+                  <h3 class="bestseller-name">Q10緊膚精華球</h3>
+                  <p class="bestseller-brand">Balea</p>
+                  <p class="bestseller-price">NT$ 35</p>
+                </div>
+              </a>
+            </div>
+            <div class="item bestseller-item">
+              <a href="product-page.html">
+                <div class="img">
+                  <img src="images/erkältungs_tee_cut.jpg" alt="" />
+                </div>
+                <div class="text">
+                  <h3 class="bestseller-name">天然草本感冒茶</h3>
+                  <p class="bestseller-brand">Bad Heilbrunner</p>
+                  <p class="bestseller-price">NT$ 100</p>
+                </div>
+              </a>
+            </div>
+            <div class="item bestseller-item">
+              <a href="product-page.html">
+                <div class="img">
+                  <img src="images/ritter_sport_chocolate_cut.jpg" alt="" />
+                </div>
+                <div class="text">
+                  <h3 class="bestseller-name">巧克力口味彩色方塊</h3>
+                  <p class="bestseller-brand">Ritter Sport</p>
+                  <p class="bestseller-price">NT$ 425</p>
+                </div>
+              </a>
+            </div>
+            <div class="item bestseller-item">
+              <a href="product-page.html">
+                <div class="img">
+                  <img src="images/doppelherz_omega3.jpg" alt="" />
+                </div>
+                <div class="text">
+                  <h3 class="bestseller-name">濃縮深海魚油軟膠囊</h3>
+                  <p class="bestseller-brand">Doppelherz</p>
+                  <p class="bestseller-price">NT$ 700</p>
+                </div>
+              </a>
+            </div>
+            <div class="item bestseller-item">
+              <a href="product-page.html">
+                <div class="img">
+                  <img src="images/kopf-entspannungs_tee_cut.jpg" alt="" />
+                </div>
+                <div class="text">
+                  <h3 class="bestseller-name">草本寧神醒腦茶</h3>
+                  <p class="bestseller-brand">Bad Heilbrunner</p>
+                  <p class="bestseller-price">NT$ 100</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonial">
+      <div class="container top">
+        <div class="testimonial-text">
+          <h2 class="testimonial-title">顧客好評</h2>
+          <p class="testimonial-description">超過9成顧客給予五星好評，<br />使每位顧客滿意是我們一直以來追求的目標！</p>
+        </div>
+        <div class="owl-carousel owl-theme testimonial-slider-wrap">
+          <div class="item testimonial-item">
+            <div class="img">
+              <img src="images/profile_01.png" />
+            </div>
+            <div class="text">
+              <h3 class="testimonial-name">連先生 / 台中</h3>
+              <p class="testimonial-content">
+                全新到貨的發泡錠，效期到2024年，每天可以喝不同的口味，補充不同的營養素，增強家人的抵抗力！
+              </p>
+            </div>
+          </div>
+          <div class="item testimonial-item">
+            <div class="img">
+              <img src="images/profile_02.png" />
+            </div>
+            <div class="text">
+              <h3 class="testimonial-name">余小姐 / 台北</h3>
+              <p class="testimonial-content">
+                小熊軟糖好好吃，而且比其他地方還要更便宜，一不小心就買了好幾種輪流吃，酸酸甜甜的令人一口接一口！
+              </p>
+            </div>
+          </div>
+          <div class="item testimonial-item">
+            <div class="img">
+              <img src="images/profile_03.png" />
+            </div>
+            <div class="text">
+              <h3 class="testimonial-name">范姜先生 / 桃園</h3>
+              <p class="testimonial-content">
+                賣家非常有效率，這已經是我第三次回購了，東西價格實在、出貨迅速，有機會還會再回購！
+              </p>
+            </div>
+          </div>
+          <div class="item testimonial-item">
+            <div class="img">
+              <img src="images/profile_04.png" />
+            </div>
+            <div class="text">
+              <h3 class="testimonial-name">顧先生 / 高雄</h3>
+              <p class="testimonial-content">
+                自德國留學回來後，就十分懷念之前在德國的生活，多虧了 GERCERY 讓我能重溫當時的好滋味！
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container bottom">
+        <div class="media-wrap">
+          <div class="media-item">
+            <div class="img">
+              <img src="images/gq_cut.png" alt="" />
+            </div>
+            <div class="text">
+              <h3 class="media-praise">‟ GERCERY 使購物成為一種享受 „</h3>
+            </div>
+          </div>
+          <div class="media-item">
+            <div class="img">
+              <img src="images/vouge_cut.png" alt="" />
+            </div>
+            <div class="text">
+              <h3 class="media-praise">‟ 對於愛地球的行動不遺餘力的品牌 „</h3>
+            </div>
+          </div>
+          <div class="media-item">
+            <div class="img">
+              <img src="images/the_strom_media_cut.png" alt="" />
+            </div>
+            <div class="text">
+              <h3 class="media-praise">‟ 超過 500 位消費者票選，選購德國產品的最佳平台 „</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-wrap">
+          <ul class="footer-item">
+            <li class="footer-title">商品分類</li>
+            <li><a href="products.html" class="footer-link">飲食零嘴</a></li>
+            <li><a href="products.html" class="footer-link">營養保健</a></li>
+            <li><a href="products.html" class="footer-link">藥妝＆保養</a></li>
+            <li><a href="products.html" class="footer-link">日常用品</a></li>
+            <li><a href="products.html" class="footer-link">全部商品</a></li>
+          </ul>
+          <ul class="footer-item">
+            <li class="footer-title"><span>快速連結</span></li>
+            <li><a href="" class="footer-link">會員專區</a></li>
+            <li><a href="about-us.html" class="footer-link">關於我們</a></li>
+            <li><a href="faq.html" class="footer-link">常見問題</a></li>
+            <li><a href="" class="footer-link">最新消息</a></li>
+            <li><a href="" class="footer-link">聯絡客服</a></li>
+          </ul>
+          <div class="footer-item">
+            <div class="subscribe">
+              <p class="footer-title">訂閱電子報獲得更多消息及優惠！</p>
+              <div class="subscribe-bar">
+                <input type="text" placeholder="輸入 E-mail 訂閱電子報" />
+                <button type="submit" class="subscribe-btn">訂閱</button>
+              </div>
+            </div>
+            <div class="footer-info">
+              <div class="footer-details">
+                <p>客服專線：02-12345678　</p>
+                <p>服務時間：週一至週五 09:00 - 17:00</p>
+              </div>
+              <ul class="footer-social-media">
+                <li class="footer-icon">
+                  <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li class="footer-icon">
+                  <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li class="footer-icon">
+                  <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li class="footer-icon">
+                  <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>
+            本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。<br />若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。
+          </p>
+          <p>COPYRIGHT © 2022 GERCERY. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Fixed -->
+    <div class="fixed">
+      <a href="">
+        <img src="images/line.png" />
+      </a>
+      <a href="#">
+        <img src="images/up-arrow.png" />
+      </a>
+    </div>
+
+    <!-- script -->
+    <script src="gercery.js"></script>
+  </body>
+</html>

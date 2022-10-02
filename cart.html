@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>購物車 | GERCERY．德式選物店</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b189abc72d.js" crossorigin="anonymous"></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body style="background-color: #fff">
+    <!-- Header -->
+    <header class="cart-header">
+      <div class="container">
+        <div class="cart-header-wrap">
+          <a href="index.html" class="img">
+            <img src="images/GERCERY.png" alt="" class="cart-logo" />
+          </a>
+          <h1>購物車</h1>
+        </div>
+      </div>
+    </header>
+
+    <!-- Discount -->
+    <section class="discount">
+      <div class="container">
+        <p><i class="fa-solid fa-tags"></i> 【會員獨享】全站結帳滿 NT$1,200 現折 NT$80</p>
+      </div>
+    </section>
+
+    <!-- Cart -->
+    <section class="cart">
+      <div class="container">
+        <div class="cart-main">
+          <h2 class="h3-title items-in-cart">購物車內的商品</h2>
+          <div class="to-buy-wrap">
+            <div class="to-buy-item buy-item-tick">
+              <input type="checkbox" name="" id="" checked="checked" />
+            </div>
+            <div class="to-buy-item buy-item-product">
+              <p class="buy-item-name">夜舒眠晚安軟膠囊</p>
+              <p class="buy-item-brand">Doppelherz</p>
+            </div>
+            <div class="to-buy-item buy-item-quantity">
+              <select name="" id="">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+              </select>
+            </div>
+            <div class="to-buy-item buy-item-price">NT$ 750</div>
+            <div class="to-buy-item buy-item-clear">
+              <button><i class="fa-solid fa-xmark"></i></button>
+            </div>
+          </div>
+          <div class="to-buy-wrap">
+            <div class="to-buy-item buy-item-tick">
+              <input type="checkbox" name="" id="" checked="checked" />
+            </div>
+            <div class="to-buy-item buy-item-product">
+              <p class="buy-item-name">天然草本感冒茶</p>
+              <p class="buy-item-brand">Bad Heilbrunner</p>
+            </div>
+            <div class="to-buy-item buy-item-quantity">
+              <select name="" id="">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+              </select>
+            </div>
+            <div class="to-buy-item buy-item-price">NT$ 100</div>
+            <div class="to-buy-item buy-item-clear">
+              <button><i class="fa-solid fa-xmark"></i></button>
+            </div>
+          </div>
+          <div class="payment-delivery-wrap">
+            <div class="delivery">
+              <label for="payment-select">請選擇運送方式</label>
+              <select name="payments" id="payment-select">
+                <option>7-11 取貨（NT$ 60）</option>
+                <option>全家取貨（NT$ 60）</option>
+                <option>宅配到府（NT$ 100）</option>
+              </select>
+            </div>
+            <div class="payment">
+              <label for="payment-select">請選擇付款方式</label>
+              <select name="payments" id="payment-select">
+                <option>7-11 取貨付款</option>
+                <option>全家取貨付款</option>
+                <option>信用卡付款（支援 Visa / Master / JCB）</option>
+                <option>ATM 付款（轉帳 / 網路線上繳款）</option>
+                <option>LINE PAY（可用LINE POINTS折抵）</option>
+              </select>
+            </div>
+          </div>
+          <div class="coupon">
+            <label for="coupon"><i class="fa-solid fa-ticket"></i> 使用優惠券代碼</label>
+            <select name="coupon" id="coupon">
+              <option>選擇優惠券代碼</option>
+              <option disabled="disabled">@10percentoff (消費滿 NT$ 1500 ，可享 9 折優惠)</option>
+            </select>
+          </div>
+        </div>
+        <div class="cart-side">
+          <h2 class="h3-title order-summary">訂單摘要</h2>
+          <ul class="price-accounting">
+            <li>
+              <p class="accounting-title">商品總計</p>
+              <p class="accounting-value">NT$ 850</p>
+            </li>
+            <li>
+              <p class="accounting-title">商品折抵</p>
+              <p class="accounting-value"><span>- NT$ 0</span></p>
+            </li>
+            <li>
+              <p class="accounting-title">運費總計</p>
+              <p class="accounting-value">NT$ 60</p>
+            </li>
+            <li>
+              <p class="accounting-title">運費折抵</p>
+              <p class="accounting-value"><span>- NT$ 0</span></p>
+            </li>
+            <li>
+              <p class="accounting-title">優惠券折抵</p>
+              <p class="accounting-value"><span>- NT$ 0</span></p>
+            </li>
+          </ul>
+          <div class="total-price">
+            <div>
+              <p class="h3-title total-price-title">結帳總金額：</p>
+              <p class="h3-title total-price-value">NT$ 850</p>
+            </div>
+            <a href="" class="go-to-checkout">
+              <button class="h3-title">前往結賬</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-wrap">
+          <ul class="footer-item">
+            <li class="footer-title">商品分類</li>
+            <li><a href="products.html" class="footer-link">飲食零嘴</a></li>
+            <li><a href="products.html" class="footer-link">營養保健</a></li>
+            <li><a href="products.html" class="footer-link">藥妝＆保養</a></li>
+            <li><a href="products.html" class="footer-link">日常用品</a></li>
+            <li><a href="products.html" class="footer-link">全部商品</a></li>
+          </ul>
+          <ul class="footer-item">
+            <li class="footer-title"><span>快速連結</span></li>
+            <li><a href="" class="footer-link">會員專區</a></li>
+            <li><a href="about-us.html" class="footer-link">關於我們</a></li>
+            <li><a href="faq.html" class="footer-link">常見問題</a></li>
+            <li><a href="" class="footer-link">最新消息</a></li>
+            <li><a href="" class="footer-link">聯絡客服</a></li>
+          </ul>
+          <div class="footer-item">
+            <div class="subscribe">
+              <p class="footer-title">訂閱電子報獲得更多消息及優惠！</p>
+              <div class="subscribe-bar">
+                <input type="text" placeholder="輸入 E-mail 訂閱電子報" />
+                <button type="submit" class="subscribe-btn">訂閱</button>
+              </div>
+            </div>
+            <div class="footer-info">
+              <div class="footer-details">
+                <p>客服專線：02-12345678　</p>
+                <p>服務時間：週一至週五 09:00 - 17:00</p>
+              </div>
+              <ul class="footer-social-media">
+                <li class="footer-icon">
+                  <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li class="footer-icon">
+                  <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li class="footer-icon">
+                  <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li class="footer-icon">
+                  <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>
+            本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。<br />若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。
+          </p>
+          <p>COPYRIGHT © 2022 GERCERY. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Fixed -->
+    <div class="fixed">
+      <a href="">
+        <img src="images/line.png" />
+      </a>
+      <a href="#">
+        <img src="images/up-arrow.png" />
+      </a>
+    </div>
+  </body>
+</html>
