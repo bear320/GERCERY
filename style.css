@@ -876,7 +876,7 @@ footer .container {
 
 .page-title {
     padding: 330px 0 68px;
-    background-image: linear-gradient(278.68deg, rgba(45, 64, 89, 0.1) 0%, rgba(45, 64, 89, 0.25) 100%), url(images/products_visual_01.jpeg);
+    background-image: linear-gradient(278.68deg, rgba(45, 64, 89, 0.1) 0%, rgba(45, 64, 89, 0.25) 100%), url(images/products_visual_cut.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 0 0 80px 0;
@@ -1515,9 +1515,9 @@ input[type=number] {
 
 .brand-visual .page-title {
     padding: 330px 0 68px;
-    background-image: linear-gradient(278.68deg, rgba(45, 64, 89, 0.1) 0%, rgba(45, 64, 89, 0.25) 100%), url(images/brand_visual.jpeg);
-    /* background-size: cover; */
-    background-position: center -150px;
+    background-image: linear-gradient(278.68deg, rgba(45, 64, 89, 0.1) 0%, rgba(45, 64, 89, 0.25) 100%), url(images/brand_visual_cut.jpg);
+    background-size: cover;
+    background-position: center;
     border-radius: 0 0 80px 0;
 }
 
@@ -1710,9 +1710,9 @@ input[type=number] {
 /* Visual */
 .about-us-visual .page-title {
     padding: 330px 0 68px;
-    background-image: linear-gradient(278.68deg, rgba(45, 64, 89, 0.1) 0%, rgba(45, 64, 89, 0.25) 100%), url(images/about-us-visual.jpeg);
-    /* background-size: cover; */
-    background-position: center -100px;
+    background-image: linear-gradient(278.68deg, rgba(45, 64, 89, 0.1) 0%, rgba(45, 64, 89, 0.25) 100%), url(images/about-us-visual-cut.jpg);
+    background-size: cover;
+    background-position: center;
     border-radius: 0 0 80px 0;
 }
 
@@ -1793,9 +1793,9 @@ input[type=number] {
 
 .faq-visual .page-title {
     padding: 330px 0 68px;
-    background-image: linear-gradient(278.68deg, rgba(45, 64, 89, 0.1) 0%, rgba(45, 64, 89, 0.25) 100%), url(images/faq_visual.jpeg);
+    background-image: linear-gradient(278.68deg, rgba(45, 64, 89, 0.1) 0%, rgba(45, 64, 89, 0.25) 100%), url(images/faq_visual_cut.jpg);
     background-size: cover;
-    background-position: center top;
+    background-position: center;
     border-radius: 0 0 80px 0;
 }
 
