@@ -16,6 +16,9 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/b189abc72d.js" crossorigin="anonymous"></script>
 
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon.ico" />
 
@@ -55,15 +58,6 @@
         </div>
       </div>
     </header>
-
-    <!-- Visual -->
-    <!-- <section class="visual">
-      <div class="page-title">
-        <div class="container">
-          <h1 class="h1-title">全部商品</h1>
-        </div>
-      </div>
-    </section> -->
 
     <!-- Breadcrumb -->
     <section class="breadcrumb mt60">
@@ -119,8 +113,13 @@
               <button class="quantity-minus"><i class="fa-solid fa-plus"></i></button>
             </div>
           </div>
-          <button class="btn-add-to-cart h3-title"><i class="fa-solid fa-cart-shopping"></i> 放入購物車</button>
-          <button class="btn-wishlist h3-title"><i class="fa-solid fa-heart"></i> 收藏商品</button>
+          <div class="cta">
+            <button class="btn-add-to-cart h3-title"><i class="fa-solid fa-cart-shopping"></i> 加入購物車</button>
+            <p class="wishlist"><i class="fa-regular fa-heart" id="heart"></i> 收藏商品</p>
+          </div>
+          <div class="curent-discount">
+            <p><i class="fa-solid fa-tags"></i> 【會員獨享】全站結帳滿 NT$1,200 現折 NT$80</p>
+          </div>
         </div>
       </div>
     </section>
@@ -128,25 +127,141 @@
     <!-- Multi-area -->
     <section class="multi-area">
       <div class="container">
-        <ul class="multi-area-title">
-          <li class="h3-title introduction"><a href="">商品介紹</a></li>
-          <li class="h3-title review"><a href="">顧客評論</a></li>
-          <li class="h3-title regulation"><a href="">送貨及付款方式</a></li>
+        <!-- tab標籤列 -->
+        <ul class="tab-title">
+          <li class="h3-title introduction active"><a href="javascript:;" data-tablink="one">商品描述</a></li>
+          <li class="h3-title review"><a href="javascript:;" data-tablink="two">顧客評論</a></li>
+          <li class="h3-title regulation"><a href="javascript:;" data-tablink="three">送貨及付款方式</a></li>
         </ul>
-        <div class="introduction-area">
-          <p>
-            品名｜德國 ROSSMANN Altapharma 綜合水果發泡錠<br />
-            規格｜檸檬（鈣）、柑橘（鎂）、橘子（綜合維生素）、芒果（綜合維生素+礦物質） 重量｜約90g(4.5*20錠)<br />
-            產地｜德國<br />
-            容量｜20入<br />
-            保存期限｜三年、日期請見瓶身/盒底標示 <br />
-            保存方式｜請置放在陰涼乾燥處，並避免強光直射。<br />
-          </p>
-          <div class="img">
-            <img src="images/intro_pic_01.jpg" alt="" />
-            <img src="images/intro_pic_02.jpeg" alt="" />
-            <img src="images/intro_pic_03.jpeg" alt="" />
-            <img src="images/intro_pic_04.jpeg" alt="" />
+
+        <!-- tab內容 -->
+        <div class="tab-inner-wrap">
+          <!-- tab1的內容 -->
+          <div id="one" class="tab-inner product-description">
+            <p>品名｜德國 ROSSMANN Altapharma 綜合水果發泡錠</p>
+            <p>規格｜檸檬（鈣）、柑橘（鎂）、橘子（綜合維生素）、芒果（綜合維生素+礦物質）</p>
+            <p>重量｜約 90 克（4.5 克 * 20 錠）</p>
+            <p>產地｜德國</p>
+            <p>容量｜20入</p>
+            <p>保存期限｜三年、日期請見瓶身/盒底標示</p>
+            <p>保存方式｜請置放在陰涼乾燥處，並避免強光直射</p>
+          </div>
+
+          <!-- tab2的內容 -->
+          <div id="two" class="tab-inner product-reviews">
+            <div class="ratings">
+              <div class="product-rating">
+                <p>5.0 / 5</p>
+                <p>★★★★★</p>
+              </div>
+              <div class="rating-levels">
+                <a href="" class="level selected">全部</a>
+                <a href="" class="level">5 星 (298)</a>
+                <a href="" class="level">4 星 (17)</a>
+                <a href="" class="level">3 星 (5)</a>
+                <a href="" class="level">2 星 (0)</a>
+                <a href="" class="level">1 星 (0)</a>
+              </div>
+            </div>
+            <div class="product-review-wrap">
+              <div class="product-review-item">
+                <div class="img">
+                  <img src="images/profile_05.png" alt="" />
+                </div>
+                <div class="content">
+                  <p class="user">司馬先生</p>
+                  <p class="user-rating">★★★★★ <span class="note">2022.10.15</span></p>
+                  <p class="user-specification">規格：檸檬（鈣）、柑橘（鎂）</p>
+                  <p class="user-comment">
+                    不喜歡沒味道的水，但又不能不喝水，所以就想說買發泡錠來配水喝，可以同時補水和補維生素，一舉兩得！
+                  </p>
+                </div>
+              </div>
+              <div class="product-review-item">
+                <div class="img">
+                  <img src="images/profile_06.png" alt="" />
+                </div>
+                <div class="content">
+                  <p class="user">上官小姐</p>
+                  <p class="user-rating">★★★★★ <span class="note">2022.10.14</span></p>
+                  <p class="user-specification">規格：柑橘（鎂）</p>
+                  <p class="user-comment">朋友從德國帶回，喝過之後覺得好喝，很開心現在在台灣也找得到！</p>
+                </div>
+              </div>
+              <div class="product-review-item">
+                <div class="img">
+                  <img src="images/profile_07.png" alt="" />
+                </div>
+                <div class="content">
+                  <p class="user">東方小姐</p>
+                  <p class="user-rating">★★★★★ <span class="note">2022.10.14</span></p>
+                  <p class="user-specification">規格：橘子（綜合維生素）</p>
+                  <p class="user-comment">
+                    聽了同事推薦來買的，第一次買這品牌的發泡錠，之前都是喝別的品牌的，如果喝得習慣、好喝的話，之後會再回購。
+                  </p>
+                </div>
+              </div>
+              <div class="product-review-item">
+                <div class="img">
+                  <img src="images/profile_08.png" alt="" />
+                </div>
+                <div class="content">
+                  <p class="user">慕容先生</p>
+                  <p class="user-rating">★★★★★ <span class="note">2022.10.14</span></p>
+                  <p class="user-specification">規格：芒果（綜合維生素+礦物質）</p>
+                  <p class="user-comment">
+                    出貨的速度快、商品品項數量正確、包裝完整，第一次買芒果口味，小孩覺得很好喝，推薦大家可以試試看！
+                  </p>
+                </div>
+              </div>
+              <div class="product-review-item">
+                <div class="img">
+                  <img src="images/profile_09.png" alt="" />
+                </div>
+                <div class="content">
+                  <p class="user">司徒先生</p>
+                  <p class="user-rating">★★★★★ <span class="note">2022.10.14</span></p>
+                  <p class="user-specification">
+                    規格：檸檬（鈣）、柑橘（鎂）、橘子（綜合維生素）、芒果（綜合維生素+礦物質）
+                  </p>
+                  <p class="user-comment">
+                    一直很喜歡德國的發泡錠，在歐洲時就很喜歡喝，雖然回來台灣很難喝到，但好險現在台灣也買的到了，下次會再來回購的！
+                  </p>
+                </div>
+              </div>
+            </div>
+            <ul class="page-number">
+              <li class="page"><a href="products.html">‹</a></li>
+              <li class="page current-page"><a href="products.html">1</a></li>
+              <li class="page"><a href="products.html">2</a></li>
+              <li class="page"><a href="products.html">3</a></li>
+              <li class="page"><a href="products.html">4</a></li>
+              <li class="page"><a href="products.html">5</a></li>
+              <li class="page"><a href="products.html">...</a></li>
+              <li class="page"><a href="products.html">›</a></li>
+            </ul>
+          </div>
+
+          <!-- tab3的內容 -->
+          <div id="three" class="tab-inner product-pay-and-delivery">
+            <div class="q-wrap">
+              <div class="q-item">
+                <h3 class="h3-title q-item-q">請問有哪些付款方式呢？</h3>
+                <ul class="q-item-a">
+                  <li>超商取貨付款<span class="note">（7-11 / 全家）</span></li>
+                  <li>信用卡付款<span class="note">（支援 Visa / Master / JCB）</span></li>
+                  <li>ATM 付款<span class="note">（轉帳 / 網路線上繳款）</span></li>
+                  <li>LINE PAY<span class="note">（可用LINE POINTS折抵）</span></li>
+                </ul>
+              </div>
+              <div class="q-item">
+                <h3 class="h3-title q-item-q">請問有哪些運送方式呢？</h3>
+                <ul class="q-item-a">
+                  <li>超商取貨<span class="note">（7-11 / 全家）</span></li>
+                  <li>宅配到府</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -168,6 +283,9 @@
                 <p class="related-price">NT$ 55</p>
               </div>
             </a>
+            <div class="to-buy-btn">
+              <button class="related-add-to-cart">加入購物車</button>
+            </div>
           </li>
           <li class="related-item">
             <a href="product-page.html">
@@ -180,6 +298,9 @@
                 <p class="related-price">NT$ 55</p>
               </div>
             </a>
+            <div class="to-buy-btn">
+              <button class="related-add-to-cart">加入購物車</button>
+            </div>
           </li>
           <li class="related-item">
             <a href="product-page.html">
@@ -192,6 +313,9 @@
                 <p class="related-price">NT$ 55</p>
               </div>
             </a>
+            <div class="to-buy-btn">
+              <button class="related-add-to-cart">加入購物車</button>
+            </div>
           </li>
           <li class="related-item">
             <a href="product-page.html">
@@ -204,6 +328,9 @@
                 <p class="related-price">NT$ 55</p>
               </div>
             </a>
+            <div class="to-buy-btn">
+              <button class="related-add-to-cart">加入購物車</button>
+            </div>
           </li>
         </ul>
       </div>
@@ -277,5 +404,8 @@
         <img src="images/up-arrow.png" />
       </a>
     </div>
+
+    <!-- script -->
+    <script src="product-page.js"></script>
   </body>
 </html>
