@@ -895,7 +895,7 @@ footer .container {
 /* <----- All Products -----> */
 /* Visual */
 
-.page-title {
+.products-visual .page-title {
     padding: 330px 0 68px;
     background-image: linear-gradient(278.68deg, rgba(45, 64, 89, 0.1) 0%, rgba(45, 64, 89, 0.25) 100%), url(images/products_visual_cut.jpg);
     background-size: cover;
@@ -1437,8 +1437,9 @@ input[type=number] {
 }
 
 .rating-levels .selected {
-    background-color: #b96125;
-    color: #fff;
+    /* background-color: #b96125; */
+    /* color: #fff; */
+    color: #b96125;
     border: 1.5px solid #b96125;
     font-weight: 500;
 }
@@ -1490,6 +1491,14 @@ input[type=number] {
 
 .user-comment {
     text-align: justify;
+}
+
+.product-pay-and-delivery .q-wrap .q-item .q-item-q::after {
+    display: none !important;
+}
+
+.product-pay-and-delivery .q-wrap .q-item .q-item-a {
+    display: block !important;
 }
 
 /* Related Commodities */
@@ -1891,34 +1900,14 @@ input[type=number] {
     gap: 40px 30px;
 }
 
-.q-item-q::before, .q-item-a::before {
-    display: flex;
-    width: 50px;
-    height: 50px;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50px;
-    color: #fff;
-    font-size: 1.4rem;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-.q-item-q::before {
-    background: #44514b;
-    content: 'Q';
-}
-
-.q-item-a::before {
-    background: #b96125;
-    content: 'A';
+.q-item {
+    position: relative;
 }
 
 .q-item-q {
     padding: 12px 0 10px 70px;
     margin-bottom: 10px;
+    cursor: pointer;
     position: relative;
 }
 
@@ -1927,8 +1916,8 @@ input[type=number] {
     margin-bottom: 30px;
     line-height: 24px;
     text-align: justify;
-    /* list-style-type: disc; */
     position: relative;
+    display: none;
 }
 
 .q-item-a span.note {
@@ -1945,6 +1934,50 @@ input[type=number] {
 
 .q-item-a span.link:hover {
     cursor: pointer;
+}
+
+.q-item-q::before {
+    background: #44514b;
+    content: 'Q';
+}
+
+.q-item-a::before {
+    background: #b96125;
+    content: 'A';
+}
+
+.q-item-q::before, .q-item-a::before {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 1.4rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.q-item-q::after {
+    content: '+';
+    color: #44514b;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    font-size: 30px;
+    transform: translateY(-50%);
+}
+
+.active .q-item-a {
+    display: block;
+}
+
+.active .q-item-q::after {
+    content: '-';
+    font-size: 30px;
 }
 
 

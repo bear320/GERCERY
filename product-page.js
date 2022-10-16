@@ -15,6 +15,34 @@ function switchFavorite() {
   });
 }
 
+// Images enlarge
+
+// $(document).ready(function () {
+//   let imgs = $(".thumbnail img");
+//   for (let i = 0; i < imgs.length; i++) {
+//     imgs[i].click(enlarge());
+//   }
+// });
+
+// function enlarge(e) {
+//   let small = e.target;
+//   small.src = $("#large-img").src;
+// }
+
+function showLarge(e) {
+  let small = e.target;
+  document.querySelector("#large-img").src = small.src;
+}
+
+function init() {
+  let imgs = document.querySelectorAll(".thumbnail img");
+  for (let i = 0; i < imgs.length; i++) {
+    imgs[i].addEventListener("click", showLarge);
+  }
+}
+
+window.addEventListener("load", init, false);
+
 // Tab switch
 $(document).ready(function () {
   tabCutover();
