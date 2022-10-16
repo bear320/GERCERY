@@ -870,11 +870,25 @@ footer .container {
 .fixed a {
     margin: 5px;
     border-radius: 100%;
+    text-decoration: none;
+    color: #44514b90;
+}
+
+.fixed .go-to-top {
+    background-color: #fff;
+}
+
+.go-to-top i {
+    font-size: 50px;
 }
 
 .fixed a img {
     width: 50px;
     height: 50px;
+}
+
+.hide {
+    display: none;
 }
 
 
