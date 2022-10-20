@@ -16,8 +16,33 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/b189abc72d.js" crossorigin="anonymous"></script>
 
-    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- Owl Carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon.ico" />
@@ -115,16 +140,18 @@
             <div class="quantity-input">
               <button class="quantity-plus"><i class="fa-solid fa-minus"></i></button>
               <input type="number" value="1" />
-              <button class="quantity-minus"><i class="fa-solid fa-plus"></i></button>
+              <button class="quantity-minus">
+                <i class="fa-solid fa-plus"></i>
+              </button>
             </div>
           </div>
           <div class="cta">
-            <button class="btn-add-to-cart h3-title"><i class="fa-solid fa-cart-shopping"></i> 加入購物車</button>
+            <button class="btn-add-to-cart h3-title"><i class="fa-solid fa-cart-shopping"></i> 購物車</button>
             <p class="wishlist"><i class="fa-regular fa-heart" id="heart"></i> 收藏商品</p>
           </div>
-          <div class="curent-discount">
-            <p><i class="fa-solid fa-tags"></i> 【會員獨享】全站結帳滿 NT$1,200 現折 NT$80</p>
-          </div>
+          <ul class="curent-discount fa-ul">
+            <li><i class="fa-li fa-solid fa-tags"></i>【會員獨享】消費滿 1,200 元現折 80 元</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -136,7 +163,7 @@
         <ul class="tab-title">
           <li class="h3-title introduction active"><a href="javascript:;" data-tablink="one">商品描述</a></li>
           <li class="h3-title review"><a href="javascript:;" data-tablink="two">顧客評論</a></li>
-          <li class="h3-title regulation"><a href="javascript:;" data-tablink="three">送貨及付款方式</a></li>
+          <li class="h3-title regulation"><a href="javascript:;" data-tablink="three">運送付款</a></li>
         </ul>
 
         <!-- tab內容 -->
@@ -251,7 +278,7 @@
           <div id="three" class="tab-inner product-pay-and-delivery">
             <div class="q-wrap">
               <div class="q-item">
-                <h3 class="h3-title q-item-q">有哪些付款方式呢？</h3>
+                <h3 class="h3-title q-item-q">請問有哪些付款方式呢？</h3>
                 <ul class="q-item-a">
                   <li>超商取貨付款<span class="note">（7-11 / 全家）</span></li>
                   <li>信用卡付款<span class="note">（支援 Visa / Master / JCB）</span></li>
@@ -260,7 +287,7 @@
                 </ul>
               </div>
               <div class="q-item">
-                <h3 class="h3-title q-item-q">有哪些運送方式呢？</h3>
+                <h3 class="h3-title q-item-q">請問有哪些運送方式呢？</h3>
                 <ul class="q-item-a">
                   <li>超商取貨<span class="note">（7-11 / 全家）</span></li>
                   <li>宅配到府</li>
@@ -273,7 +300,7 @@
     </section>
 
     <!-- Related Commodities -->
-    <section class="related">
+    <!-- <section class="related">
       <div class="container">
         <h3 class="h2-title related-title">其他人也看了...</h3>
         <ul class="related-wrap">
@@ -289,7 +316,7 @@
               </div>
             </a>
             <div class="to-buy-btn">
-              <button class="related-add-to-cart">加入購物車</button>
+              <button class="related-add-to-cart"><i class="fa-solid fa-cart-shopping"></i> 購物車</button>
             </div>
           </li>
           <li class="related-item">
@@ -304,7 +331,7 @@
               </div>
             </a>
             <div class="to-buy-btn">
-              <button class="related-add-to-cart">加入購物車</button>
+              <button class="related-add-to-cart"><i class="fa-solid fa-cart-shopping"></i> 購物車</button>
             </div>
           </li>
           <li class="related-item">
@@ -319,7 +346,7 @@
               </div>
             </a>
             <div class="to-buy-btn">
-              <button class="related-add-to-cart">加入購物車</button>
+              <button class="related-add-to-cart"><i class="fa-solid fa-cart-shopping"></i> 購物車</button>
             </div>
           </li>
           <li class="related-item">
@@ -334,10 +361,78 @@
               </div>
             </a>
             <div class="to-buy-btn">
-              <button class="related-add-to-cart">加入購物車</button>
+              <button class="related-add-to-cart"><i class="fa-solid fa-cart-shopping"></i> 購物車</button>
             </div>
           </li>
         </ul>
+      </div>
+    </section> -->
+
+    <section class="related">
+      <div class="container">
+        <h3 class="h2-title related-title">其他人也看了...</h3>
+        <div class="owl-carousel owl-theme related-wrap">
+          <div class="item related-item">
+            <a href="product-page.html">
+              <div class="img">
+                <img src="images/haribo_cut.jpg" alt="" />
+              </div>
+              <div class="text">
+                <p class="related-name">金熊Ｑ軟糖</p>
+                <p class="related-brand">Haribo</p>
+                <p class="related-price">NT$ 55</p>
+              </div>
+            </a>
+            <div class="to-buy-btn">
+              <button class="related-add-to-cart"><i class="fa-solid fa-cart-shopping"></i> 購物車</button>
+            </div>
+          </div>
+          <div class="item related-item">
+            <a href="product-page.html">
+              <div class="img">
+                <img src="images/haribo_cut.jpg" alt="" />
+              </div>
+              <div class="text">
+                <p class="related-name">金熊Ｑ軟糖</p>
+                <p class="related-brand">Haribo</p>
+                <p class="related-price">NT$ 55</p>
+              </div>
+            </a>
+            <div class="to-buy-btn">
+              <button class="related-add-to-cart"><i class="fa-solid fa-cart-shopping"></i> 購物車</button>
+            </div>
+          </div>
+          <div class="item related-item">
+            <a href="product-page.html">
+              <div class="img">
+                <img src="images/haribo_cut.jpg" alt="" />
+              </div>
+              <div class="text">
+                <p class="related-name">金熊Ｑ軟糖</p>
+                <p class="related-brand">Haribo</p>
+                <p class="related-price">NT$ 55</p>
+              </div>
+            </a>
+            <div class="to-buy-btn">
+              <button class="related-add-to-cart"><i class="fa-solid fa-cart-shopping"></i> 購物車</button>
+            </div>
+          </div>
+          <div class="item related-item">
+            <a href="product-page.html">
+              <div class="img">
+                <img src="images/haribo_cut.jpg" alt="" />
+              </div>
+              <div class="text">
+                <p class="related-name">金熊Ｑ軟糖</p>
+                <p class="related-brand">Haribo</p>
+                <p class="related-price">NT$ 55</p>
+              </div>
+            </a>
+            <div class="to-buy-btn">
+              <button class="related-add-to-cart"><i class="fa-solid fa-cart-shopping"></i> 購物車</button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 

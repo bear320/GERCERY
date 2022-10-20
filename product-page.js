@@ -66,3 +66,29 @@ function tabCutover() {
     $(this).addClass("active").siblings(".active").removeClass("active");
   });
 }
+
+// Carousel of ralated products
+$(".related-wrap").owlCarousel({
+  center: false,
+  items: 2,
+  loop: true,
+  margin: 10,
+  dots: false,
+  autoplay: true,
+  autoplayTimeout: 3000,
+  autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    550: {
+      items: 2,
+    },
+    768: {
+      items: 3,
+    },
+    1024: {
+      items: 4,
+    },
+  },
+});
