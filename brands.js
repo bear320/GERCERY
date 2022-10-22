@@ -6,9 +6,9 @@ $(".brand-slider-wrap").owlCarousel({
   margin: 10,
   nav: true,
   dots: false,
-  // autoplay: true,
-  // autoplayTimeout: 3000,
-  // autoplayHoverPause: true,
+  autoplay: true,
+  autoplayTimeout: 3000,
+  autoplayHoverPause: true,
   responsive: {
     0: {
       items: 1,
@@ -21,6 +21,37 @@ $(".brand-slider-wrap").owlCarousel({
     },
   },
 });
+
+// Tab switch + Go to brand introduction
+$(document).ready(function () {
+  tabCutover();
+  goToBrand();
+});
+
+function tabCutover() {
+  $(".brand-tab-title div.active").each(function () {
+    var tablink = $(this).find("a").data("tablink");
+
+    $("#" + tablink)
+      .show()
+      .siblings(".brand-tab-inner")
+      .hide();
+  });
+
+  $(".brand-tab-title .brand-item").click(function () {
+    $("#" + $(this).find("a").data("tablink"))
+      .show()
+      .siblings(".brand-tab-inner")
+      .hide();
+    $(this).addClass("active").siblings(".active").removeClass("active");
+  });
+}
+
+function goToBrand() {
+  $(".brand-item").click(function () {
+    $("html,body").animate({ scrollTop: $("#go-to-brand").offset().top - 100 }, 500);
+  });
+}
 
 // Carousel of Brands' Bestsellers
 $(".popularity-wrap").owlCarousel({

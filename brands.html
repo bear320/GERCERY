@@ -119,9 +119,10 @@
             世界上有四個頂級的櫥櫃品牌，全部出自德國，<br />
             就連已故英國女王伊麗莎白二世的廚房也只選用德國品牌。
           </p>
-          <div class="owl-carousel owl-theme brand-slider-wrap">
-            <div class="item brand-item">
-              <a href="#go-to-brand">
+          <!-- tab 標籤列 -->
+          <div class="owl-carousel owl-theme brand-tab-title brand-slider-wrap">
+            <div class="item brand-item active">
+              <a href="javascript:;" data-tablink="one">
                 <div class="img">
                   <img src="images/haribo_logo_cut.jpg" alt="" />
                 </div>
@@ -132,7 +133,7 @@
               </a>
             </div>
             <div class="item brand-item">
-              <a href="#go-to-brand">
+              <a href="javascript:;" data-tablink="two">
                 <div class="img">
                   <img src="images/doppelherz_logo_cut.jpg" alt="" />
                 </div>
@@ -143,7 +144,7 @@
               </a>
             </div>
             <div class="item brand-item">
-              <a href="#go-to-brand">
+              <a href="javascript:;" data-tablink="three">
                 <div class="img">
                   <img src="images/rimowa_logo_cut.jpg" alt="" />
                 </div>
@@ -154,7 +155,7 @@
               </a>
             </div>
             <div class="item brand-item">
-              <a href="#go-to-brand">
+              <a href="javascript:;" data-tablink="four">
                 <div class="img">
                   <img src="images/nivea_logo_cut.jpg" alt="" />
                 </div>
@@ -170,123 +171,360 @@
     </section>
 
     <!-- Brand Introduction -->
-    <section class="brand-introduction" id="go-to-brand">
-      <div class="container top">
-        <div class="brand-img">
-          <img src="images/haribo_logo_cut_large.jpg" alt="" />
+    <!-- tab 內容 -->
+    <section class="brand-tab-inner-wrap brand-introduction" id="go-to-brand">
+      <!-- tab1 的內容 -->
+      <div id="one" class="brand-tab-inner">
+        <div class="container top">
+          <div class="brand-img">
+            <img src="images/haribo_logo_cut_large.jpg" alt="" />
+          </div>
+          <div class="brand-text">
+            <h2 class="h2-title brand-text-name">Haribo 哈瑞寶</h2>
+            <p class="brand-text-intro">
+              Haribo
+              是德國知名糖果企業，該企業擁有同名糖果品牌，其中最廣為人知的產品就是金熊Ｑ軟糖（小熊軟糖）。這個名稱來源於企業建立者漢斯·雷格
+              (Hans Riegel) 以及企業的所在地波恩 (Bonn)。如今 Haribo
+              在德國擁有五家分廠，且在歐洲其它地方也有十三家分廠，並有超過6000名工人。
+            </p>
+            <br />
+            <p class="brand-text-intro">
+              Haribo 的知名宣傳口號為：“ Haribo macht Kinder froh und Erwachsene ebenso.
+              ”，翻譯為中文意思是：「大人小孩都說好，快樂品嚐哈瑞寶」。
+            </p>
+          </div>
         </div>
-        <div class="brand-text">
-          <h2 class="h2-title brand-text-name">Haribo 哈瑞寶</h2>
-          <p class="brand-text-intro">
-            Haribo
-            是德國知名糖果企業，該企業擁有同名糖果品牌，其中最廣為人知的產品就是金熊Ｑ軟糖（小熊軟糖）。這個名稱來源於企業建立者漢斯·雷格
-            (Hans Riegel) 以及企業的所在地波恩 (Bonn)。如今 Haribo
-            在德國擁有五家分廠，且在歐洲其它地方也有十三家分廠，並有超過6000名工人。
-          </p>
-          <br />
-          <p class="brand-text-intro">
-            Haribo 的知名宣傳口號為：“ Haribo macht Kinder froh und Erwachsene ebenso.
-            ”，翻譯為中文意思是：「大人小孩都說好，快樂品嚐哈瑞寶」。
-          </p>
+        <div class="container bottom">
+          <h2 class="h2-title popularity-title">熱銷商品</h2>
+          <div class="owl-carousel owl-theme popularity-wrap">
+            <!-- delete line -->
+            <div class="item related-item">
+              <a href="product-page.html">
+                <div class="img">
+                  <img src="images/haribo_cut.jpg" alt="" />
+                </div>
+                <div class="text">
+                  <p class="related-name">金熊Ｑ軟糖</p>
+                  <p class="related-brand">Haribo</p>
+                  <p class="related-price">NT$ 55</p>
+                </div>
+              </a>
+              <div class="to-buy-btn">
+                <button class="related-add-to-cart"><i class="fa-solid fa-cart-shopping"></i> 購物車</button>
+              </div>
+            </div>
+            <div class="item related-item">
+              <a href="product-page.html">
+                <div class="img">
+                  <img src="images/haribo_cut.jpg" alt="" />
+                </div>
+                <div class="text">
+                  <p class="related-name">金熊Ｑ軟糖</p>
+                  <p class="related-brand">Haribo</p>
+                  <p class="related-price">NT$ 55</p>
+                </div>
+              </a>
+              <div class="to-buy-btn">
+                <button class="related-add-to-cart"><i class="fa-solid fa-cart-shopping"></i> 購物車</button>
+              </div>
+            </div>
+            <div class="item related-item">
+              <a href="product-page.html">
+                <div class="img">
+                  <img src="images/haribo_cut.jpg" alt="" />
+                </div>
+                <div class="text">
+                  <p class="related-name">金熊Ｑ軟糖</p>
+                  <p class="related-brand">Haribo</p>
+                  <p class="related-price">NT$ 55</p>
+                </div>
+              </a>
+              <div class="to-buy-btn">
+                <button class="related-add-to-cart"><i class="fa-solid fa-cart-shopping"></i> 購物車</button>
+              </div>
+            </div>
+            <div class="item related-item">
+              <a href="product-page.html">
+                <div class="img">
+                  <img src="images/haribo_cut.jpg" alt="" />
+                </div>
+                <div class="text">
+                  <p class="related-name">金熊Ｑ軟糖</p>
+                  <p class="related-brand">Haribo</p>
+                  <p class="related-price">NT$ 55</p>
+                </div>
+              </a>
+              <div class="to-buy-btn">
+                <button class="related-add-to-cart"><i class="fa-solid fa-cart-shopping"></i> 購物車</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="container bottom">
-        <h2 class="h2-title popularity-title">熱銷商品</h2>
-        <div class="owl-carousel owl-theme popularity-wrap">
-          <!-- <div class="item popularity-item">
-            <a href="product-page.html">
-              <div class="img">
-                <img src="images/haribo_cut.jpg" alt="" />
-                <div class="add-to-cart">加入購物車</div>
-              </div>
-              <div class="text">
-                <h3 class="h3-title popularity-name">金熊Ｑ軟糖</h3>
-                <p class="popularity-price">NT$ 55</p>
-              </div>
-            </a>
+
+      <!-- tab2 的內容 -->
+      <div id="two" class="brand-tab-inner">
+        <div class="container top">
+          <div class="brand-img">
+            <img src="images/doppelherz_logo_cut_large.jpg" alt="" />
           </div>
-          <div class="item popularity-item">
-            <a href="product-page.html">
-              <div class="img">
-                <img src="images/haribo_cut.jpg" alt="" />
-                <div class="add-to-cart">加入購物車</div>
-              </div>
-              <div class="text">
-                <h3 class="h3-title popularity-name">金熊Ｑ軟糖</h3>
-                <p class="popularity-price">NT$ 55</p>
-              </div>
-            </a>
+          <div class="brand-text">
+            <h2 class="h2-title brand-text-name">Doppelherz 德之寶／雙心</h2>
+            <p class="brand-text-intro">
+              Doppelherz 創始於西元 1919 年，德國化學家 Josef Peter Hennes 從草藥和其他天然植物中提取了有效成分，製成
+              Doppelherz
+              至今聞名的草本能量調理液（主要用於心臟功能調理），「雙心」的名稱也由此而得，品牌發展至今，Doppelherz
+              儼然已經成為保健品市場的先導者。
+            </p>
+            <br />
+            <p class="brand-text-intro">
+              Doppelherz 品牌至今已經有 100
+              多年的歷史，其服務理念是——將顧客的健康放在我們心中，致力於從純天然原材料中開發和研制高品質保健產品，是德國和歐洲家喻戶曉的產品。
+            </p>
           </div>
-          <div class="item popularity-item">
-            <a href="product-page.html">
-              <div class="img">
-                <img src="images/haribo_cut.jpg" alt="" />
-                <div class="add-to-cart">加入購物車</div>
+        </div>
+        <div class="container bottom">
+          <h2 class="h2-title popularity-title">熱銷商品</h2>
+          <div class="owl-carousel owl-theme popularity-wrap">
+            <div class="item related-item">
+              <a href="product-page.html">
+                <div class="img">
+                  <img src="images/kopf-entspannungs_tee_cut.jpg" alt="" />
+                </div>
+                <div class="text">
+                  <p class="related-name">草本寧神醒腦茶</p>
+                  <p class="related-brand">Doppelherz</p>
+                  <p class="related-price">NT$ 700</p>
+                </div>
+              </a>
+              <div class="to-buy-btn">
+                <button class="related-add-to-cart"><i class="fa-solid fa-cart-shopping"></i> 購物車</button>
               </div>
-              <div class="text">
-                <h3 class="h3-title popularity-name">金熊Ｑ軟糖</h3>
-                <p class="popularity-price">NT$ 55</p>
+            </div>
+            <div class="item related-item">
+              <a href="product-page.html">
+                <div class="img">
+                  <img src="images/kopf-entspannungs_tee_cut.jpg" alt="" />
+                </div>
+                <div class="text">
+                  <p class="related-name">草本寧神醒腦茶</p>
+                  <p class="related-brand">Doppelherz</p>
+                  <p class="related-price">NT$ 700</p>
+                </div>
+              </a>
+              <div class="to-buy-btn">
+                <button class="related-add-to-cart"><i class="fa-solid fa-cart-shopping"></i> 購物車</button>
               </div>
-            </a>
-          </div> -->
-          <div class="item related-item">
-            <a href="product-page.html">
-              <div class="img">
-                <img src="images/haribo_cut.jpg" alt="" />
+            </div>
+            <div class="item related-item">
+              <a href="product-page.html">
+                <div class="img">
+                  <img src="images/kopf-entspannungs_tee_cut.jpg" alt="" />
+                </div>
+                <div class="text">
+                  <p class="related-name">草本寧神醒腦茶</p>
+                  <p class="related-brand">Doppelherz</p>
+                  <p class="related-price">NT$ 700</p>
+                </div>
+              </a>
+              <div class="to-buy-btn">
+                <button class="related-add-to-cart"><i class="fa-solid fa-cart-shopping"></i> 購物車</button>
               </div>
-              <div class="text">
-                <p class="related-name">金熊Ｑ軟糖</p>
-                <p class="related-brand">Haribo</p>
-                <p class="related-price">NT$ 55</p>
+            </div>
+            <div class="item related-item">
+              <a href="product-page.html">
+                <div class="img">
+                  <img src="images/kopf-entspannungs_tee_cut.jpg" alt="" />
+                </div>
+                <div class="text">
+                  <p class="related-name">草本寧神醒腦茶</p>
+                  <p class="related-brand">Doppelherz</p>
+                  <p class="related-price">NT$ 700</p>
+                </div>
+              </a>
+              <div class="to-buy-btn">
+                <button class="related-add-to-cart"><i class="fa-solid fa-cart-shopping"></i> 購物車</button>
               </div>
-            </a>
-            <div class="to-buy-btn">
-              <button class="related-add-to-cart"><i class="fa-solid fa-cart-shopping"></i> 購物車</button>
             </div>
           </div>
-          <div class="item related-item">
-            <a href="product-page.html">
-              <div class="img">
-                <img src="images/haribo_cut.jpg" alt="" />
+        </div>
+      </div>
+
+      <!-- tab3 的內容 -->
+      <div id="three" class="brand-tab-inner">
+        <div class="container top">
+          <div class="brand-img">
+            <img src="images/rimowa_logo_cut_large.jpg" alt="" />
+          </div>
+          <div class="brand-text">
+            <h2 class="h2-title brand-text-name">RIMOWA 日默瓦</h2>
+            <p class="brand-text-intro">
+              RIMOWA 是一家產品以鋁和聚碳酸酯打造的德國行李箱製造商，2016 年時被酩悅·軒尼詩－路易·威登集團 (LVMH)
+              收購。品牌名稱源自其德文全名“<span>Ri</span>chard <span>Mo</span>rszeck <span>Wa</span>renzeichen”
+              之縮寫，其中 Richard Morszeck 是品牌創始人的兒子兼後來的經營者之名，而 Warenzeichen 則是德文「商標」之意。
+            </p>
+            <br />
+            <p class="brand-text-intro">
+              1930 年代，RIMOWA 工廠的一場大火燒毀了他們大部分的原料，僅剩下了「鋁材」而已，但他們化危機為轉機，於 1937
+              年時首度推出鋁製的行李箱，因鋁質凹槽非常耐用且耐用，因此鋁製行李箱也成了 RIMOWA 的常年熱銷款。
+            </p>
+            <br />
+            <p class="brand-text-intro">
+              日默瓦是用鋁和 100%
+              聚碳酸酯生產行李箱的品牌，使用聚碳酸酯為原料的點子是參觀一家正承包德國路燈燈蓋改造工程時得到的靈感，他們發現一種防彈塑膠材料並運用到行李箱製造上。
+            </p>
+          </div>
+        </div>
+        <div class="container bottom">
+          <h2 class="h2-title popularity-title">熱銷商品</h2>
+          <div class="owl-carousel owl-theme popularity-wrap">
+            <div class="item related-item">
+              <a href="product-page.html">
+                <div class="img">
+                  <img src="images/rimowa_cut.jpg" alt="" />
+                </div>
+                <div class="text">
+                  <p class="related-name">Classic Check-In L</p>
+                  <p class="related-brand">Rimowa</p>
+                  <p class="related-price">NT$ 44,000 (未含關稅)</p>
+                </div>
+              </a>
+              <div class="to-buy-btn">
+                <button class="related-add-to-cart"><i class="fa-solid fa-cart-shopping"></i> 購物車</button>
               </div>
-              <div class="text">
-                <p class="related-name">金熊Ｑ軟糖</p>
-                <p class="related-brand">Haribo</p>
-                <p class="related-price">NT$ 55</p>
+            </div>
+            <div class="item related-item">
+              <a href="product-page.html">
+                <div class="img">
+                  <img src="images/rimowa_cut.jpg" alt="" />
+                </div>
+                <div class="text">
+                  <p class="related-name">Classic Check-In L</p>
+                  <p class="related-brand">Rimowa</p>
+                  <p class="related-price">NT$ 44,000 (未含關稅)</p>
+                </div>
+              </a>
+              <div class="to-buy-btn">
+                <button class="related-add-to-cart"><i class="fa-solid fa-cart-shopping"></i> 購物車</button>
               </div>
-            </a>
-            <div class="to-buy-btn">
-              <button class="related-add-to-cart"><i class="fa-solid fa-cart-shopping"></i> 購物車</button>
+            </div>
+            <div class="item related-item">
+              <a href="product-page.html">
+                <div class="img">
+                  <img src="images/rimowa_cut.jpg" alt="" />
+                </div>
+                <div class="text">
+                  <p class="related-name">Classic Check-In L</p>
+                  <p class="related-brand">Rimowa</p>
+                  <p class="related-price">NT$ 44,000 (未含關稅)</p>
+                </div>
+              </a>
+              <div class="to-buy-btn">
+                <button class="related-add-to-cart"><i class="fa-solid fa-cart-shopping"></i> 購物車</button>
+              </div>
+            </div>
+            <div class="item related-item">
+              <a href="product-page.html">
+                <div class="img">
+                  <img src="images/rimowa_cut.jpg" alt="" />
+                </div>
+                <div class="text">
+                  <p class="related-name">Classic Check-In L</p>
+                  <p class="related-brand">Rimowa</p>
+                  <p class="related-price">NT$ 44,000 (未含關稅)</p>
+                </div>
+              </a>
+              <div class="to-buy-btn">
+                <button class="related-add-to-cart"><i class="fa-solid fa-cart-shopping"></i> 購物車</button>
+              </div>
             </div>
           </div>
-          <div class="item related-item">
-            <a href="product-page.html">
-              <div class="img">
-                <img src="images/haribo_cut.jpg" alt="" />
-              </div>
-              <div class="text">
-                <p class="related-name">金熊Ｑ軟糖</p>
-                <p class="related-brand">Haribo</p>
-                <p class="related-price">NT$ 55</p>
-              </div>
-            </a>
-            <div class="to-buy-btn">
-              <button class="related-add-to-cart"><i class="fa-solid fa-cart-shopping"></i> 購物車</button>
-            </div>
+        </div>
+      </div>
+
+      <!-- tab4 的內容 -->
+      <div id="four" class="brand-tab-inner">
+        <div class="container top">
+          <div class="brand-img">
+            <img src="images/nivea_logo_cut_large.jpg" alt="" />
           </div>
-          <div class="item related-item">
-            <a href="product-page.html">
-              <div class="img">
-                <img src="images/haribo_cut.jpg" alt="" />
+          <div class="brand-text">
+            <h2 class="h2-title brand-text-name">NIVEA 妮維雅</h2>
+            <p class="brand-text-intro">
+              NIVEA 是一個由德國公司 Beiersdorf 所有的大型全球性護膚品與身體護理品品牌，1911 年由拜爾斯道夫所有人 Oskar
+              Troplowitz 命名，命名之靈感來自拉丁語 <i>niveus, -a, -um</i>（雪白之意）。
+            </p>
+            <br />
+            <p class="brand-text-intro">
+              妮維雅霜的成功源自於當代最新科技， Eucerit是 Isaac Lifschütz 博士在 1911
+              年之前開發的全新的乳化劑，能夠將油和水結合成極細且穩定的混合物，皮膚科醫師 Paul Gerson Unna 也認同
+              Lifschütz 博士在這一領域的專業知識，並向 Beiersdorf 化學家兼聯合創始人 Oscar Troplowitz
+              介紹，而後者也快速意識到——油包水乳液將成為化妝品護膚霜的完美基礎。
+            </p>
+          </div>
+        </div>
+        <div class="container bottom">
+          <h2 class="h2-title popularity-title">熱銷商品</h2>
+          <div class="owl-carousel owl-theme popularity-wrap">
+            <div class="item related-item">
+              <a href="product-page.html">
+                <div class="img">
+                  <img src="images/nivea_cut.jpg" alt="" />
+                </div>
+                <div class="text">
+                  <p class="related-name">妮維雅霜</p>
+                  <p class="related-brand">Nivea</p>
+                  <p class="related-price">NT$ 120</p>
+                </div>
+              </a>
+              <div class="to-buy-btn">
+                <button class="related-add-to-cart"><i class="fa-solid fa-cart-shopping"></i> 購物車</button>
               </div>
-              <div class="text">
-                <p class="related-name">金熊Ｑ軟糖</p>
-                <p class="related-brand">Haribo</p>
-                <p class="related-price">NT$ 55</p>
+            </div>
+            <div class="item related-item">
+              <a href="product-page.html">
+                <div class="img">
+                  <img src="images/nivea_cut.jpg" alt="" />
+                </div>
+                <div class="text">
+                  <p class="related-name">妮維雅霜</p>
+                  <p class="related-brand">Nivea</p>
+                  <p class="related-price">NT$ 120</p>
+                </div>
+              </a>
+              <div class="to-buy-btn">
+                <button class="related-add-to-cart"><i class="fa-solid fa-cart-shopping"></i> 購物車</button>
               </div>
-            </a>
-            <div class="to-buy-btn">
-              <button class="related-add-to-cart"><i class="fa-solid fa-cart-shopping"></i> 購物車</button>
+            </div>
+            <div class="item related-item">
+              <a href="product-page.html">
+                <div class="img">
+                  <img src="images/nivea_cut.jpg" alt="" />
+                </div>
+                <div class="text">
+                  <p class="related-name">妮維雅霜</p>
+                  <p class="related-brand">Nivea</p>
+                  <p class="related-price">NT$ 120</p>
+                </div>
+              </a>
+              <div class="to-buy-btn">
+                <button class="related-add-to-cart"><i class="fa-solid fa-cart-shopping"></i> 購物車</button>
+              </div>
+            </div>
+            <div class="item related-item">
+              <a href="product-page.html">
+                <div class="img">
+                  <img src="images/nivea_cut.jpg" alt="" />
+                </div>
+                <div class="text">
+                  <p class="related-name">妮維雅霜</p>
+                  <p class="related-brand">Nivea</p>
+                  <p class="related-price">NT$ 120</p>
+                </div>
+              </a>
+              <div class="to-buy-btn">
+                <button class="related-add-to-cart"><i class="fa-solid fa-cart-shopping"></i> 購物車</button>
+              </div>
             </div>
           </div>
         </div>
@@ -317,13 +555,13 @@
             <div class="subscribe">
               <p class="footer-title">訂閱電子報獲得更多消息及優惠！</p>
               <div class="subscribe-bar">
-                <input type="text" placeholder="輸入 E-mail 訂閱電子報" />
+                <input type="email" placeholder="輸入 E-mail 訂閱電子報" />
                 <button type="submit" class="subscribe-btn">訂閱</button>
               </div>
             </div>
             <div class="footer-info">
               <div class="footer-details">
-                <p>客服專線：02-12345678　</p>
+                <p>客服專線：<a href="tel:+886-2-12345678">02-12345678</a></p>
                 <p>服務時間：週一至週五 09:00 - 17:00</p>
               </div>
               <ul class="footer-social-media">
