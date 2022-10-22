@@ -2922,6 +2922,22 @@ input[type=number] {
     border-radius: 0 0 80px 0;
 }
 
+@media screen and (max-width: 1024px) {
+    .brand-visual .page-title {
+        padding: 200px 0 40px;
+        background-position: center 0;
+        border-radius: 0 0 40px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .brand-visual .page-title {
+        padding: 150px 0 40px;
+        background-position: center 50px;
+        border-radius: 0;
+    }
+}
+
 /* Brands */
 
 .brand-carousell {
@@ -2951,8 +2967,9 @@ input[type=number] {
 }
 
 .brand-description {
+    box-sizing: border-box;
+    padding: 0 20px;
     margin-bottom: 50px;
-    padding-left: 20px;
     line-height: 32px;
 }
 
@@ -3013,6 +3030,32 @@ input[type=number] {
     line-height: 21px;
 }
 
+@media screen and (max-width: 768px) {
+
+    .brand-carousell .container:before {
+        border-radius: 0 40px 40px 0;
+    }
+}
+
+@media screen and (max-width: 560px) {
+
+    .brand-description {
+        text-align: justify;
+        text-indent: 2em;
+    }
+
+    .brand-description br {
+        display: none;
+    }
+    
+    .brand-item {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+}
+
+
 /* Brand Introduction */
 .brand-introduction .top {
     display: flex;
@@ -3043,6 +3086,7 @@ input[type=number] {
 .brand-text-intro {
     font-weight: 500;
     line-height: 32px;
+    text-indent: 2em;
 }
 
 .brand-introduction .bottom {
@@ -3061,7 +3105,7 @@ input[type=number] {
     z-index: 1;
 }
 
-.popularity-item {
+/* .popularity-item {
     box-sizing: border-box;
     padding: 20px;
     opacity: .85;
@@ -3098,6 +3142,40 @@ input[type=number] {
 
 .popularity-name {
     margin-bottom: 10px;
+} */
+
+@media screen and (max-width: 1024px) {
+
+    .brand-introduction .top, .brand-introduction .bottom {
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .brand-introduction .bottom::after {
+        border-radius: 0;
+    }
+
+    .brand-introduction .container {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10% 40px;
+    }
+
+    .brand-img {
+        width: 35%;
+        height: fit-content;
+    }
+
+    .brand-text {
+        width: 60%;
+        height: fit-content;
+        padding: 0 20px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
 }
 
 

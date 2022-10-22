@@ -5,7 +5,7 @@ $(document).ready(function () {
 
 function switchFavorite() {
   let wishlist = $(".wishlist");
-  let heart = $("#heart");
+  // let heart = $("#heart");
   wishlist.click(function () {
     if (wishlist.html() == '<i class="fa-regular fa-heart" id="heart"></i> 收藏商品') {
       wishlist.html('<i class="fa-solid fa-heart" id="heart"></i> 取消收藏');
