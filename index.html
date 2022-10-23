@@ -13,36 +13,21 @@
       rel="stylesheet"
     />
 
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/b189abc72d.js" crossorigin="anonymous"></script>
-
     <!-- Owl Carousel -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
-      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon.ico" />
@@ -52,6 +37,25 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Preloader -->
+    <!-- <section class="preloader">
+      <div class="preloader-wrap">
+        <div class="preloader-logo">
+          <img src="images/LOGO_with_name.png" alt="" />
+        </div>
+        <div class="preloader-dotline">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+    </section> -->
+
     <!-- Header -->
     <input type="checkbox" name="" id="menu-switch" />
     <header class="main-header">
@@ -89,12 +93,40 @@
       </div>
     </header>
 
+    <!-- News Ticker -->
+    <section>
+      <div class="news-ticker" data-speed="5000">
+        <ul>
+          <li>
+            <a href=""><i class="fa-solid fa-bullhorn"></i> 全館消費滿 1,200 元現折 80元，加入會員即享優惠</a>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-bullhorn"></i> 歡慶 Haribo 哈瑞寶一百週年，品牌商品享 9 折優惠</a>
+          </li>
+          <li>
+            <a href=""> <i class="fa-solid fa-bullhorn"></i> 因受到近期德國通貨膨脹影響，11 月起部分商品將調漲售價 </a>
+          </li>
+        </ul>
+        <span class="close-ticker">
+          <i class="fa-solid fa-xmark"></i>
+        </span>
+      </div>
+    </section>
+
     <!-- Cover -->
     <section>
       <div class="cover">
-        <div class="main-cover"></div>
-        <div class="sub-cover"></div>
-        <div class="cover-text">
+        <div class="main-cover" data-aos="fade-right" data-aos-duration="1500">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="sub-cover" data-aos="fade-down-left" data-aos-duration="1500">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="cover-text" data-aos="fade-up-left" data-aos-duration="1500">
           <h1>不管是時興的、經典的<br />或是惦念的德國事物<br />在 GERCERY 都找得到</h1>
         </div>
       </div>
@@ -103,7 +135,7 @@
     <!-- News -->
     <section class="news">
       <div class="container">
-        <div class="news-wrap">
+        <div class="news-wrap" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">
           <div class="news-list">
             <div class="news-item">
               <span class="news-date">2022年09月16日</span>
@@ -115,7 +147,7 @@
             </div>
             <div class="news-item">
               <span class="news-date">2022年08月27日</span>
-              <a href="" class="news-title">歡慶哈瑞寶一百週年優惠活動</a>
+              <a href="" class="news-title">歡慶 Haribo 一百週年優惠活動</a>
             </div>
           </div>
           <div class="all-news">
@@ -129,7 +161,7 @@
     <section class="intro_and_features">
       <div class="container">
         <div class="InF-wrap">
-          <div class="intro-wrap">
+          <div class="intro-wrap" data-aos="fade-left" data-aos-duration="1500">
             <div class="intro-content">
               <h2 class="intro-title">GERCERY 精選<br />德國製造<br />優質、可靠、耐用</h2>
               <p class="intro-text">
@@ -140,7 +172,7 @@
               <img src="images/made_in_germany_cut.jpg" alt="" />
             </div>
           </div>
-          <ul class="feat-wrap">
+          <ul class="feat-wrap" data-aos="fade-up" data-aos-duration="1500">
             <li class="feat-item">
               <figure>
                 <img src="images/cargo_cut.jpg" alt="" />
@@ -185,8 +217,8 @@
     <!-- Categories -->
     <section class="category">
       <div class="container">
-        <h2 class="category-title">商品分類</h2>
-        <div class="category-wrap">
+        <h2 class="category-title" data-aos="fade-right" data-aos-duration="1500">商品分類</h2>
+        <div class="category-wrap" data-aos="fade-right" data-aos-duration="1500">
           <div class="category-item">
             <a href="products.html">
               <div class="img">
@@ -241,7 +273,7 @@
     <!-- Bestsellers -->
     <section class="bestseller">
       <div class="container">
-        <div class="bestseller-wrap">
+        <div class="bestseller-wrap" data-aos="fade-left" data-aos-duration="1500">
           <h2 class="bestseller-title">熱銷商品</h2>
           <p class="bestseller-description">看看大家最近都買了些什麼，說不定會有你喜歡的商品喔！</p>
           <div class="owl-carousel owl-theme bestseller-slider-wrap">
@@ -249,7 +281,7 @@
               <a href="product-page.html">
                 <div class="img">
                   <img src="images/china_oil_cut.jpg" alt="" />
-                  <div class="add-to-cart">加入購物車</div>
+                  <div class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>加入購物車</div>
                 </div>
                 <div class="text">
                   <h3 class="bestseller-name">德國百靈油</h3>
@@ -262,7 +294,7 @@
               <a href="product-page.html">
                 <div class="img">
                   <img src="images/tablet_cut.jpg" alt="" />
-                  <div class="add-to-cart">加入購物車</div>
+                  <div class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>加入購物車</div>
                 </div>
                 <div class="text">
                   <h3 class="bestseller-name">綜合水果發泡錠</h3>
@@ -275,7 +307,7 @@
               <a href="product-page.html">
                 <div class="img">
                   <img src="images/haribo_cut.jpg" alt="" />
-                  <div class="add-to-cart">加入購物車</div>
+                  <div class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>加入購物車</div>
                 </div>
                 <div class="text">
                   <h3 class="bestseller-name">金熊Ｑ軟糖</h3>
@@ -288,7 +320,7 @@
               <a href="product-page.html">
                 <div class="img">
                   <img src="images/herbacin_handcream_cut.jpg" alt="" />
-                  <div class="add-to-cart">加入購物車</div>
+                  <div class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>加入購物車</div>
                 </div>
                 <div class="text">
                   <h3 class="bestseller-name">小甘菊經典護手霜</h3>
@@ -301,7 +333,7 @@
               <a href="product-page.html">
                 <div class="img">
                   <img src="images/doppelherz_night_capsules_cut.jpg" alt="" />
-                  <div class="add-to-cart">加入購物車</div>
+                  <div class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>加入購物車</div>
                 </div>
                 <div class="text">
                   <h3 class="bestseller-name">夜舒眠晚安軟膠囊</h3>
@@ -314,7 +346,7 @@
               <a href="product-page.html">
                 <div class="img">
                   <img src="images/balea_q10_cut.jpg" alt="" />
-                  <div class="add-to-cart">加入購物車</div>
+                  <div class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>加入購物車</div>
                 </div>
                 <div class="text">
                   <h3 class="bestseller-name">Q10緊膚精華球</h3>
@@ -327,7 +359,7 @@
               <a href="product-page.html">
                 <div class="img">
                   <img src="images/erkältungs_tee_cut.jpg" alt="" />
-                  <div class="add-to-cart">加入購物車</div>
+                  <div class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>加入購物車</div>
                 </div>
                 <div class="text">
                   <h3 class="bestseller-name">天然草本感冒茶</h3>
@@ -340,7 +372,7 @@
               <a href="product-page.html">
                 <div class="img">
                   <img src="images/ritter_sport_chocolate_cut.jpg" alt="" />
-                  <div class="add-to-cart">加入購物車</div>
+                  <div class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>加入購物車</div>
                 </div>
                 <div class="text">
                   <h3 class="bestseller-name">巧克力口味彩色方塊</h3>
@@ -353,7 +385,7 @@
               <a href="product-page.html">
                 <div class="img">
                   <img src="images/doppelherz_omega3_cut.jpg" alt="" />
-                  <div class="add-to-cart">加入購物車</div>
+                  <div class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>加入購物車</div>
                 </div>
                 <div class="text">
                   <h3 class="bestseller-name">濃縮深海魚油軟膠囊</h3>
@@ -366,7 +398,7 @@
               <a href="product-page.html">
                 <div class="img">
                   <img src="images/kopf-entspannungs_tee_cut.jpg" alt="" />
-                  <div class="add-to-cart">加入購物車</div>
+                  <div class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>加入購物車</div>
                 </div>
                 <div class="text">
                   <h3 class="bestseller-name">草本寧神醒腦茶</h3>
@@ -383,11 +415,11 @@
     <!-- Testimonials -->
     <section class="testimonial">
       <div class="container top">
-        <div class="testimonial-text">
+        <div class="testimonial-text" data-aos="fade-up" data-aos-duration="1500">
           <h2 class="testimonial-title">顧客好評</h2>
           <p class="testimonial-description">超過9成顧客給予五星好評，<br />使每位顧客滿意是我們一直以來追求的目標！</p>
         </div>
-        <div class="owl-carousel owl-theme testimonial-slider-wrap">
+        <div class="owl-carousel owl-theme testimonial-slider-wrap" data-aos="fade-up" data-aos-duration="1500">
           <div class="item testimonial-item">
             <div class="img">
               <img src="images/profile_01.png" />
@@ -533,7 +565,18 @@
       </a>
     </div>
 
-    <!-- script -->
+    <!-- Scripts -->
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b189abc72d.js" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Slick -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- My Scripts -->
     <script src="common.js"></script>
     <script src="index.js"></script>
   </body>

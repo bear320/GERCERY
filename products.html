@@ -13,11 +13,8 @@
       rel="stylesheet"
     />
 
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/b189abc72d.js" crossorigin="anonymous"></script>
-
-    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon.ico" />
@@ -64,6 +61,26 @@
       </div>
     </header>
 
+    <!-- News Ticker -->
+    <section>
+      <div class="news-ticker" data-speed="5000">
+        <ul>
+          <li>
+            <a href=""><i class="fa-solid fa-bullhorn"></i> 全館消費滿 1,200 元現折 80元，加入會員即享優惠</a>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-bullhorn"></i> 歡慶 Haribo 哈瑞寶一百週年，品牌商品享 9 折優惠</a>
+          </li>
+          <li>
+            <a href=""> <i class="fa-solid fa-bullhorn"></i> 因受到近期德國通貨膨脹影響，11 月起部分商品將調漲售價 </a>
+          </li>
+        </ul>
+        <span class="close-ticker">
+          <i class="fa-solid fa-xmark"></i>
+        </span>
+      </div>
+    </section>
+
     <!-- Visual -->
     <section class="products-visual">
       <div class="page-title">
@@ -87,7 +104,7 @@
     <section class="product">
       <div class="container">
         <div class="sidebar">
-          <div class="sidebar-item">
+          <div class="sidebar-item" data-aos="fade-right" data-aos-duration="1500">
             <h2 class="sidebar-item-title h2-title">商品分類</h2>
             <nav>
               <a href="products.html">飲食零嘴</a>
@@ -97,7 +114,7 @@
               <a href="products.html">全部商品</a>
             </nav>
           </div>
-          <div class="sidebar-item">
+          <div class="sidebar-item" data-aos="fade-right" data-aos-duration="1500">
             <h2 class="sidebar-item-title h2-title">商品品牌</h2>
             <nav>
               <a href="products.html">Alpecin</a>
@@ -123,7 +140,7 @@
             </nav>
           </div>
         </div>
-        <div class="menu-and-setting">
+        <div class="menu-and-setting" data-aos="fade-up" data-aos-duration="1500">
           <div class="menu-category-wrap">
             <label for="menu-category">商品分類</label>
             <select name="menu-category" id="menu-category">
@@ -171,7 +188,7 @@
             </select>
           </div>
         </div>
-        <div class="main-area">
+        <div class="main-area" data-aos="fade-up" data-aos-duration="1500">
           <div class="setting">
             <div class="sorting">
               <label for="sort-select">排序</label>
@@ -193,7 +210,7 @@
               <a href="product-page.html">
                 <div class="img">
                   <img src="images/china_oil_cut.jpg" alt="" />
-                  <div class="add-to-cart">加入購物車</div>
+                  <div class="add-to-cart"><i class="fa-solid fa-magnifying-glass"></i>查看商品</div>
                 </div>
                 <div class="text">
                   <h3 class="product-name h3-title">德國百靈油</h3>
@@ -207,7 +224,7 @@
               <a href="product-page.html">
                 <div class="img">
                   <img src="images/tablet_cut.jpg" alt="" />
-                  <div class="add-to-cart">加入購物車</div>
+                  <div class="add-to-cart"><i class="fa-solid fa-magnifying-glass"></i>查看商品</div>
                 </div>
                 <div class="text">
                   <h3 class="product-name h3-title">綜合水果發泡錠</h3>
@@ -221,7 +238,7 @@
               <a href="product-page.html">
                 <div class="img">
                   <img src="images/haribo_cut.jpg" alt="" />
-                  <div class="add-to-cart">加入購物車</div>
+                  <div class="add-to-cart"><i class="fa-solid fa-magnifying-glass"></i>查看商品</div>
                 </div>
                 <div class="text">
                   <h3 class="product-name h3-title">金熊Ｑ軟糖</h3>
@@ -235,7 +252,7 @@
               <a href="product-page.html">
                 <div class="img">
                   <img src="images/china_oil_cut.jpg" alt="" />
-                  <div class="add-to-cart">加入購物車</div>
+                  <div class="add-to-cart"><i class="fa-solid fa-magnifying-glass"></i>查看商品</div>
                 </div>
                 <div class="text">
                   <h3 class="product-name h3-title">德國百靈油</h3>
@@ -249,7 +266,7 @@
               <a href="product-page.html">
                 <div class="img">
                   <img src="images/tablet_cut.jpg" alt="" />
-                  <div class="add-to-cart">加入購物車</div>
+                  <div class="add-to-cart"><i class="fa-solid fa-magnifying-glass"></i>查看商品</div>
                 </div>
                 <div class="text">
                   <h3 class="product-name h3-title">綜合水果發泡錠</h3>
@@ -263,7 +280,7 @@
               <a href="product-page.html">
                 <div class="img">
                   <img src="images/haribo_cut.jpg" alt="" />
-                  <div class="add-to-cart">加入購物車</div>
+                  <div class="add-to-cart"><i class="fa-solid fa-magnifying-glass"></i>查看商品</div>
                 </div>
                 <div class="text">
                   <h3 class="product-name h3-title">金熊Ｑ軟糖</h3>
@@ -277,7 +294,7 @@
               <a href="product-page.html">
                 <div class="img">
                   <img src="images/china_oil_cut.jpg" alt="" />
-                  <div class="add-to-cart">加入購物車</div>
+                  <div class="add-to-cart"><i class="fa-solid fa-magnifying-glass"></i>查看商品</div>
                 </div>
                 <div class="text">
                   <h3 class="product-name h3-title">德國百靈油</h3>
@@ -291,7 +308,7 @@
               <a href="product-page.html">
                 <div class="img">
                   <img src="images/tablet_cut.jpg" alt="" />
-                  <div class="add-to-cart">加入購物車</div>
+                  <div class="add-to-cart"><i class="fa-solid fa-magnifying-glass"></i>查看商品</div>
                 </div>
                 <div class="text">
                   <h3 class="product-name h3-title">綜合水果發泡錠</h3>
@@ -305,7 +322,7 @@
               <a href="product-page.html">
                 <div class="img">
                   <img src="images/haribo_cut.jpg" alt="" />
-                  <div class="add-to-cart">加入購物車</div>
+                  <div class="add-to-cart"><i class="fa-solid fa-magnifying-glass"></i>查看商品</div>
                 </div>
                 <div class="text">
                   <h3 class="product-name h3-title">金熊Ｑ軟糖</h3>
@@ -319,7 +336,7 @@
               <a href="product-page.html">
                 <div class="img">
                   <img src="images/china_oil_cut.jpg" alt="" />
-                  <div class="add-to-cart">加入購物車</div>
+                  <div class="add-to-cart"><i class="fa-solid fa-magnifying-glass"></i>查看商品</div>
                 </div>
                 <div class="text">
                   <h3 class="product-name h3-title">德國百靈油</h3>
@@ -333,7 +350,7 @@
               <a href="product-page.html">
                 <div class="img">
                   <img src="images/tablet_cut.jpg" alt="" />
-                  <div class="add-to-cart">加入購物車</div>
+                  <div class="add-to-cart"><i class="fa-solid fa-magnifying-glass"></i>查看商品</div>
                 </div>
                 <div class="text">
                   <h3 class="product-name h3-title">綜合水果發泡錠</h3>
@@ -347,7 +364,7 @@
               <a href="product-page.html">
                 <div class="img">
                   <img src="images/haribo_cut.jpg" alt="" />
-                  <div class="add-to-cart">加入購物車</div>
+                  <div class="add-to-cart"><i class="fa-solid fa-magnifying-glass"></i>查看商品</div>
                 </div>
                 <div class="text">
                   <h3 class="product-name h3-title">金熊Ｑ軟糖</h3>
@@ -438,7 +455,14 @@
       </a>
     </div>
 
-    <!-- script -->
+    <!-- Scripts -->
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b189abc72d.js" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- My Scripts -->
     <script src="common.js"></script>
   </body>
 </html>

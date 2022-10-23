@@ -44,3 +44,31 @@ $(".testimonial-slider-wrap").owlCarousel({
     },
   },
 });
+
+// Main-cover carousel
+$(".main-cover").slick({
+  dots: false,
+  arrows: false,
+  infinite: true,
+  speed: 1000,
+  fade: true,
+  cssEase: "linear",
+  autoplay: true,
+  draggable: false,
+  pauseOnFocus: false,
+  pauseOnHover: false,
+});
+
+// Sub-cover carousel
+$(".sub-cover").slick({
+  dots: false,
+  arrows: false,
+  infinite: true,
+  speed: 1000,
+  fade: true,
+  cssEase: "linear",
+  autoplay: true,
+  draggable: false,
+  pauseOnFocus: false,
+  pauseOnHover: false,
+});

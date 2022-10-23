@@ -1,20 +1,3 @@
-// Switch wishlist
-$(document).ready(function () {
-  switchFavorite();
-});
-
-function switchFavorite() {
-  let wishlist = $(".wishlist");
-  // let heart = $("#heart");
-  wishlist.click(function () {
-    if (wishlist.html() == '<i class="fa-regular fa-heart" id="heart"></i> 收藏商品') {
-      wishlist.html('<i class="fa-solid fa-heart" id="heart"></i> 取消收藏');
-    } else {
-      wishlist.html('<i class="fa-regular fa-heart" id="heart"></i> 收藏商品');
-    }
-  });
-}
-
 // Images enlarge
 
 // $(document).ready(function () {
@@ -64,6 +47,42 @@ function tabCutover() {
       .siblings(".tab-inner")
       .hide();
     $(this).addClass("active").siblings(".active").removeClass("active");
+  });
+}
+
+// Quantity control
+$(document).ready(function () {
+  let plusBtn = $(".quantity-plus");
+  let minusBtn = $(".quantity-minus");
+  let qty = $(".qty-input");
+
+  plusBtn.click(function () {
+    if (qty.val() < 10) {
+      qty.val(parseInt(qty.val()) + 1);
+    }
+  });
+
+  minusBtn.click(function () {
+    if (qty.val() > 0) {
+      qty.val(parseInt(qty.val()) - 1);
+    }
+  });
+});
+
+// Switch wishlist
+$(document).ready(function () {
+  switchFavorite();
+});
+
+function switchFavorite() {
+  let wishlist = $(".wishlist");
+  // let heart = $("#heart");
+  wishlist.click(function () {
+    if (wishlist.html() == '<i class="fa-regular fa-heart" id="heart"></i> 收藏商品') {
+      wishlist.html('<i class="fa-solid fa-heart" id="heart"></i> 取消收藏');
+    } else {
+      wishlist.html('<i class="fa-regular fa-heart" id="heart"></i> 收藏商品');
+    }
   });
 }
 
