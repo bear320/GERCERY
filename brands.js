@@ -49,7 +49,7 @@ function tabCutover() {
 
 function goToBrand() {
   $(".brand-item").click(function () {
-    $("html,body").animate({ scrollTop: $("#go-to-brand").offset().top - 100 }, 500);
+    $("html,body").animate({ scrollTop: $("#go-to-brand").offset().top - 200 }, 500);
   });
 }
 

@@ -14,8 +14,15 @@
       rel="stylesheet"
     />
 
-    <!-- Slick -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Owl Carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
 
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -101,15 +108,15 @@
       <div class="container">
         <div class="img">
           <div class="main-img">
-            <button class="to-left"><i class="fa-solid fa-angle-left"></i></button>
-            <button class="to-right"><i class="fa-solid fa-angle-right"></i></button>
+            <button class="to-prev"><i class="fa-solid fa-angle-left"></i></button>
+            <button class="to-next"><i class="fa-solid fa-angle-right"></i></button>
             <img src="images/tablet_cut_big.jpg" alt="" id="large-img" />
           </div>
           <div class="thumbnail">
-            <img src="images/tablet_cut.jpg" alt="" />
+            <img src="images/tablet_cut_big.jpg" alt="" class="thumbnail-first current-img" />
             <img src="images/tablet_01_cut.jpg" alt="" />
             <img src="images/tablet_02_cut.jpg" alt="" />
-            <img src="images/tablet_03_cut.jpg" alt="" />
+            <img src="images/tablet_03_cut.jpg" alt="" class="thumbnail-last" />
           </div>
         </div>
         <div class="text">
@@ -153,7 +160,7 @@
     </section>
 
     <!-- Multi-area -->
-    <section class="multi-area">
+    <section class="multi-area" data-aos="fade-up" data-aos-duration="1500">
       <div class="container">
         <!-- tab標籤列 -->
         <ul class="tab-title">
@@ -418,8 +425,8 @@
     <script src="https://kit.fontawesome.com/b189abc72d.js" crossorigin="anonymous"></script>
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <!-- Slick -->
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- My Scripts -->

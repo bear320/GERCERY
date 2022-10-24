@@ -1,30 +1,26 @@
-// Images enlarge
+// Images enlarge and control
+$(document).ready(function () {
+  let largeImg = $("#large-img");
 
-// $(document).ready(function () {
-//   let imgs = $(".thumbnail img");
-//   for (let i = 0; i < imgs.length; i++) {
-//     imgs[i].click(enlarge());
-//   }
-// });
+  $(".thumbnail img").click(function () {
+    largeImg.attr("src", $(this).attr("src"));
+    $(this).addClass("current-img").siblings().removeClass("current-img");
+  });
 
-// function enlarge(e) {
-//   let small = e.target;
-//   small.src = $("#large-img").src;
-// }
+  $("button.to-prev").click(function () {
+    if ($(".current-img").hasClass("thumbnail-first") == false) {
+      $(".current-img").prev().addClass("current-img").siblings().removeClass("current-img");
+      largeImg.attr("src", $(".current-img").attr("src"));
+    }
+  });
 
-function showLarge(e) {
-  let small = e.target;
-  document.querySelector("#large-img").src = small.src;
-}
-
-function init() {
-  let imgs = document.querySelectorAll(".thumbnail img");
-  for (let i = 0; i < imgs.length; i++) {
-    imgs[i].addEventListener("click", showLarge);
-  }
-}
-
-window.addEventListener("load", init, false);
+  $("button.to-next").click(function () {
+    if ($(".current-img").hasClass("thumbnail-last") == false) {
+      $(".current-img").next().addClass("current-img").siblings().removeClass("current-img");
+      largeImg.attr("src", $(".current-img").attr("src"));
+    }
+  });
+});
 
 // Tab switch
 $(document).ready(function () {
