@@ -54,5 +54,38 @@ $(window).scroll(function () {
   }
 });
 
+// Lightbox: LINE
+$(document).ready(function () {
+  $(".fixed a.line-link").click(function () {
+    $(".lightbox-bg").show();
+  });
+
+  $(".lb-to-close").click(function () {
+    $(".lightbox-bg").fadeOut(500);
+  });
+});
+
+// Lightbox: Add to cart
+$(document).ready(function () {
+  $(".add-to-cart").click(function (event) {
+    $(".lightbox-bg-cart").show().delay(2000).fadeOut(500);
+    event.preventDefault();
+  });
+
+  $(".btn-cart").click(function () {
+    if ($(this).hasClass("sold-out") == false) {
+      $(".lightbox-bg-cart").show().delay(2000).fadeOut(500);
+    }
+  });
+
+  $(".btn-add-to-cart").click(function () {
+    $(".lightbox-bg-cart").show().delay(2000).fadeOut(500);
+  });
+
+  $(".related-add-to-cart").click(function () {
+    $(".lightbox-bg-cart").show().delay(2000).fadeOut(500);
+  });
+});
+
 // AOS initialize
 AOS.init();
