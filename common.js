@@ -67,7 +67,7 @@ $(document).ready(function () {
 
 // Lightbox: Add to cart
 $(document).ready(function () {
-  $(".add-to-cart").click(function (event) {
+  $(".bestseller-item a .img .add-to-cart").click(function (event) {
     $(".lightbox-bg-cart").show().delay(2000).fadeOut(500);
     event.preventDefault();
   });
