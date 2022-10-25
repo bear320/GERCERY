@@ -3326,6 +3326,9 @@ input[type=number] {
     font-weight: 500;
     line-height: 32px;
     text-align: justify;
+}
+
+.info-content a {
     color: #44514b;
     text-decoration: none;
 }
