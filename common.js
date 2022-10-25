@@ -86,6 +86,3 @@ $(document).ready(function () {
     $(".lightbox-bg-cart").show().delay(2000).fadeOut(500);
   });
 });
-
-// AOS initialize
-AOS.init();
