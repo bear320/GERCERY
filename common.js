@@ -1,6 +1,19 @@
+// Check Session Storage
+$(document).ready(function () {
+  if (JSON.parse(sessionStorage.getItem("closedNewsTicker")) == true) {
+    $(".news-ticker").hide();
+  }
+
+  if (JSON.parse(sessionStorage.getItem("playedPreloader")) == true) {
+    $(".preloader").hide();
+  }
+});
+
 // Preloader
 $(document).ready(function () {
   $(".preloader").delay(3000).fadeOut(1000);
+  // check proloader has been played and save this event to session storage
+  sessionStorage.setItem("playedPreloader", "true");
 });
 
 // News Ticker
@@ -30,6 +43,8 @@ $(document).ready(function ($) {
     $(".news-ticker").fadeOut(500, function () {
       $(this).remove();
     });
+    // check News Ticker has been closed and save this click evevt to session storage
+    sessionStorage.setItem("closedNewsTicker", "true");
   });
 });
 
@@ -62,6 +77,16 @@ $(document).ready(function () {
 
   $(".lb-to-close").click(function () {
     $(".lightbox-bg").fadeOut(500);
+  });
+
+  $(".lightbox-bg").click(function (e) {
+    // 設置目標區域
+    let targertArea = $(".lightbox-wrap");
+
+    // 判斷點選事件發生在區域外的條件：點選事件的對象不是目標區域本身＆事件對象同時也不是目標區域的子元素
+    if (!targertArea.is(e.target) && targertArea.has(e.target).length === 0) {
+      $(".lightbox-bg").fadeOut(500);
+    }
   });
 });
 
